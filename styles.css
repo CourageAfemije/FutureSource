@@ -967,6 +967,14 @@ button { cursor: pointer; font-family: inherit; border: none; outline: none; }
 }
 @media (max-width: 600px) {
   .srv-headline { font-size: 1.7rem; }
+  .srv-pills { align-items: center; }
+  .pill-row {
+    justify-content: center;
+    gap: 8px;
+  }
+  .srv-pill { font-size: 13px; padding: 8px 14px; }
+  .pill-img { padding: 5px 14px 5px 5px; }
+  .pill-thumb { width: 28px; height: 28px; }
 }
 
 /* ─── PROCESS ──────────────────────────────────────────────────────── */
@@ -975,6 +983,10 @@ button { cursor: pointer; font-family: inherit; border: none; outline: none; }
   background: var(--bg-primary);
 }
 .process-header { text-align: center; margin-bottom: 64px; }
+.process-header .section-subtitle {
+  margin: 0 auto;
+  text-align: center;
+}
 .process-timeline {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -1133,6 +1145,10 @@ button { cursor: pointer; font-family: inherit; border: none; outline: none; }
   background: var(--bg-primary);
 }
 .testi-header { text-align: center; margin-bottom: 60px; }
+.testi-header .section-subtitle {
+  margin: 0 auto;
+  text-align: center;
+}
 .testi-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
