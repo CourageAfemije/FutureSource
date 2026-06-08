@@ -868,6 +868,7 @@ button {
 .about-body strong {
   color: var(--text-primary);
   font-weight: 600;
+  
 }
 .about-pills {
   display: flex;
