@@ -1964,6 +1964,7 @@ button {
 
 /* ─── TRUSTED BY (logo strip) ──────────────────────────────────────── */
 .trusted-section {
+  padding: var(--section-py) 0;
   background: #ffffff;
 }
 .trusted-strip {
