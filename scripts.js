@@ -57,6 +57,14 @@ const revealObserver = new IntersectionObserver(
 
 fadeEls.forEach((el) => revealObserver.observe(el));
 
+window.addEventListener("load", () => {
+  requestAnimationFrame(() => {
+    if (!document.querySelector(".fade-up.visible")) {
+      fadeEls.forEach((el) => el.classList.add("visible"));
+    }
+  });
+});
+
 // ── Stagger children in grids ─────────────────────────────────────────
 const staggerParents = document.querySelectorAll(
   ".services-grid, .srv-pills, .cases-grid, .testi-grid, .metrics-grid, .about-stats-grid",
